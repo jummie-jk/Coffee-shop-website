@@ -1,0 +1,26 @@
+@keyframes scrollText {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+  
+.scrolling-text-container {
+  height: 90vh;
+  background-image: linear-gradient(to bottom,
+  #000 0%,
+  #000 50%,
+    #191919 50%,
+    #191919 100%);
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.scrolling-text {
+  display: inline-block;
+  animation: scrollText 10s linear infinite;
+}
